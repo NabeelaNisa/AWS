@@ -1,0 +1,10 @@
+The Multi-Tier Company Setup
+
+Imagine you work for a cloud-native enterprise called TechCorp. Your engineering team needs to segment access across two projects: Project-Alpha and Project-Beta.
+The Requirements:
+
+    The Developers (Dev-Team): Should be able to view, start, stop, and reboot EC2 instances, but only for Project-Alpha. They must not have access to Project-Beta resources or any other AWS services (like IAM, RDS, or S3).
+
+    The Principle of Least Privilege: Access must be strictly scoped using resource tags (Project = Alpha).
+
+    The Cleanup Guardrail: Because you are working in a lab or free-tier environment, you need an easy teardown plan.
