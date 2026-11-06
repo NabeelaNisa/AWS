@@ -1,0 +1,10 @@
+AdministratorAccess
+SagaMakerStudioAdminIAMConsolePolicy
+AwsMaketplaceManagesSubscriptions
+AWSSupportAccess
+AWSSupportAppFullAccess
+Billing
+IAMSelfManageServiceSpecificCredentials
+AmazonBedrockFullAccess
+AWSBillingReadOnlyAccess
+AWSCodeCommitFullAccess
