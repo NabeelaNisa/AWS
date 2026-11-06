@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowEC2ManagementForAlphaProject",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:RebootInstances"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:ResourceTag/Project": "Alpha"
+                }
+            }
+        },
+        {
+            "Sid": "AllowViewingAndDescribeForConsole",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*",
+                "ec2-instance-connect:SendSSHPublicKey",
+                "tag:GetResources",
+                "resource-groups:ListGroups",
+                "resource-groups:ListGroupResources",
+                "cloudwatch:DescribeAlarms",
+                "cloudwatch:GetMetricData"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
