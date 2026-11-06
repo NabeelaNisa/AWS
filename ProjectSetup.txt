@@ -8,3 +8,11 @@ The Requirements:
     The Principle of Least Privilege: Access must be strictly scoped using resource tags (Project = Alpha).
 
     The Cleanup Guardrail: Because you are working in a lab or free-tier environment, you need an easy teardown plan.
+
+
+    Instance 1: Name it App-Alpha-Server and add a tag: Key = Project, Value = Alpha.
+
+    Instance 2: Name it App-Beta-Server and add a tag: Key = Project, Value = Beta.
+
+    Policyname : ProjectAlpha-EC2-Operator-Policy
+    RoleName : DevTeam-Alpha-Role
